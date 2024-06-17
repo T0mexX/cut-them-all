@@ -1,4 +1,4 @@
-![Screenshot_20240617_131420](https://github.com/T0mexX/cut-them-all/assets/122273875/69ee0200-e493-4ac4-af01-94e245bc304f)# Cut Them All
+# Cut Them All
 Cut Them All is an action-packed platform game where your mission is to defeat every monster in each level to progress. Navigate through challenging terrains, use your weapons skillfully, and employ quick reflexes to vanquish all foes standing in your way. Only by slaying every last monster can you advance to the next, even more treacherous stage. Are you ready to cut through the chaos and emerge victorious?
 
 ## Settings
