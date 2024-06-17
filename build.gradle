@@ -7,16 +7,13 @@ plugins {
 
 
 application {
-    mainClass.set('tetris.game.TetrisGame')
+    mainClass.set('bonusGame.BonusGame')
 }
 
-
-
-test {
-    useJUnitPlatform()
-    afterSuite { suite, result ->
-        result.exception?.printStackTrace()
-    }
+jar {
+	manifest {
+		attributes 'Main-Class': application.mainClass
+	}
 }
 
 ext {
@@ -26,10 +23,6 @@ ext {
 
 
 repositories {
-    flatDir {
-        dirs 'lib'
-    }
-
     mavenCentral()
 }
 
@@ -39,16 +32,8 @@ sourceSets.test.scala.srcDirs = ['test']
 
 dependencies {
     implementation "org.scala-lang:scala-library:${scalaVersion}"
-    implementation fileTree(include: ['*.jar'], dir: 'lib')
     implementation 'net.compartmental.code:minim:2.2.2'
-//    testImplementation('junit:junit:4.13.2')
-//    testImplementation("org.scala-lang:scala-reflect") {
-//        version {
-//            strictly '2.13.11'
-//        }
-//    }
-//    testImplementation('org.junit.vintage:junit-vintage-engine:5.9.0')
-//    testImplementation("org.scalatest:scalatest_${scalaMajorVersion}:3.0.9")
+	implementation 'org.processing:core:3.3.6'
 }
 
 
